@@ -30,10 +30,12 @@ int main() {
             if (first[i] == second[i]) {
                 cout << first[i] ;
             } else {
-                cout<< static_cast<char>(min(first[i], second[i]) + 1) <<endl;
+                cout<< static_cast<char>(min(first[i], second[i]) + 1);
                 break;
             }
         }
+
+        cout<<endl;
     }
 
     return 0;
