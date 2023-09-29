@@ -29,13 +29,13 @@ int main() {
         for(int i = 0; i < size; i++) {
             if (first[i] == second[i]) {
                 cout << first[i] ;
+                if(i == size - 1) cout<<endl;
             } else {
-                cout<< static_cast<char>(min(first[i], second[i]) + 1);
+                cout<< static_cast<char>(min(first[i], second[i]) + 1) <<endl;
                 break;
             }
         }
 
-        cout<<endl;
     }
 
     return 0;
