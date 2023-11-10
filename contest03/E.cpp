@@ -1,18 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// RUNTIMEERROR
-
-
 int t;
 long long n, m;
 void solve(){
     cout << n << " " << m << endl;
-    vector<vector<int>> a(m);
+    vector<vector<int>> a(2*m);
     for(int i = 0; i < n; i++){
         int temp;
         cin >> temp;
-        a[temp%m].emplace_back(temp);
+        a[temp%m+m].emplace_back(temp);
     }
     vector<int> even, odd;
     for(auto &x : a){
