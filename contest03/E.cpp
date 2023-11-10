@@ -1,10 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// RUNTIMEERROR
+
+
 int t;
 long long n, m;
 void solve(){
-    cout << n << " " << m << "\n";
+    cout << n << " " << m << endl;
     vector<vector<int>> a(m);
     for(int i = 0; i < n; i++){
         int temp;
